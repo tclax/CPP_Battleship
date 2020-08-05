@@ -1,0 +1,33 @@
+Things to consider:
+
+Goal:
+	Create a battleship simulator to win a game of battleship in the least amount of turns as possible. 
+	A standard battleship game has the following  sizes and ships: 5 - Carrier, 4 - Battleship, 3 - Submarine, 3 - Destroyer, 2 - Patrol
+	5 + 4 + 3 + 3 + 2 = 15
+	The best case scenario score to get is to win in 15 moves, this will require perfect predictions.
+	The worst case scenario score to get is the board width x board height. Typically the board is 8x8 so the worst possible score to get is 64.
+
+How will the battleship boards be represented?
+	2d array
+	Linked nodes
+	Boards should be able to be 
+	Array of size 64 (board width x board height)
+
+
+How will the ship pieces will be represented?
+	Tiles on the board will either be empty or a ship.
+	Each tile will have a state: hit, miss, unknown
+	The board will need to display differently per player.
+    Player1 vs Player2
+	Player1 vs Computer
+	Computer1 vs Computer2 (most interested in this)
+		
+
+How will the computer make moves?
+	Needs a method to choose a strategy.
+	Based on strategy selected result, keep using that strategy or move to a another stragey based on previous boards.
+	Keep in memory all the boards created to develop a strategy.
+
+How will a winner be determined?
+	All ships are sunk on the players board
+	
